@@ -27,8 +27,20 @@
 
 ---
 
-## Usage
+## Quick Start
 
-### 1. Generate a Key
 ```bash
+# 1. Generate a random 32-byte key
 go run keygen.go
+
+# 2. Start the server
+go run server.go crypto.go wipe.go
+
+# 3. Start the client (on same or different machine)
+go run client.go crypto.go wipe.go
+
+# 4. Chat Securely
+```text
+# Example
+You: Hello!
+Client: Hi, this is encrypted!
